@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Glow - Shine Every Day</title>
+    <meta name="description" content="Luna Glow - مجوهرات نسائية فاخرة وأنيقة. اكتشفي تشكيلتنا من القلادات والخواتم والأساور والأقراط الفاخرة.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION BAR
+         ============================================ -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1>Luna Glow</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li><a href="#featured" class="nav-link">المنتجات</a></li>
+                <li><a href="#bestsellers" class="nav-link">الأكثر مبيعاً</a></li>
+                <li><a href="#about" class="nav-link">عن العلامة</a></li>
+                <li><a href="#reviews" class="nav-link">التقييمات</a></li>
+                <li><a href="#contact" class="nav-link">التواصل</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Shine Every Day</h2>
+            <p class="hero-subtitle">اكتشفي جمال المجوهرات الفاخرة التي تعكس شخصيتك الأنيقة</p>
+            <button class="cta-button" onclick="document.getElementById('featured').scrollIntoView({behavior: 'smooth'})">تصفحي المجموعة</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- ============================================
+         FEATURED PRODUCTS SECTION
+         ============================================ -->
+    <section id="featured" class="featured-products">
+        <div class="container">
+            <h2 class="section-title">المنتجات المميزة</h2>
+            <p class="section-subtitle">اختاري من تشكيلتنا الحصرية من المجوهرات الفاخرة</p>
+            
+            <div id="featuredProducts" class="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BEST SELLERS SECTION
+         ============================================ -->
+    <section id="bestsellers" class="bestsellers">
+        <div class="container">
+            <h2 class="section-title">الأكثر مبيعاً</h2>
+            <p class="section-subtitle">المفضلة لدى عملائنا الكرام</p>
+            
+            <div id="bestsellersProducts" class="bestsellers-grid"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT BRAND SECTION
+         ============================================ -->
+    <section id="about" class="about-brand">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">عن Luna Glow</h2>
+                    <p>نحن نؤمن أن كل امرأة تستحق أن تشع بجمال وأناقة. Luna Glow تقدم مجموعة حصرية من المجوهرات الفاخرة المصممة بعناية فائقة لتعكس شخصيتك الفريدة.</p>
+                    <p>كل قطعة من مجوهراتنا تصنع بأفضل المواد الخام وبأيدي حرفيين ماهرين، لضمان الجودة والأناقة في كل تفصيل.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">✨</span>
+                            <h4>جودة عالية</h4>
+                            <p>مواد فاخرة وحرفية متقنة</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🎁</span>
+                            <h4>تغليف فاخر</h4>
+                            <p>كل قطعة تأتي بتغليف أنيق</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🚚</span>
+                            <h4>شحن سريع</h4>
+                            <p>توصيل آمن وسريع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CUSTOMER REVIEWS SECTION
+         ============================================ -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">آراء عملائنا</h2>
+            <p class="section-subtitle">ماذا يقول عملاؤنا عن Luna Glow</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>فاطمة محمد</h4>
+                            <p class="review-date">منذ أسبوع</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">المجوهرات رائعة جداً والجودة ممتازة! التغليف كان أنيق جداً والشحن وصل بسرعة. سأطلب مرة أخرى بالتأكيد.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>نورا علي</h4>
+                            <p class="review-date">منذ أسبوعين</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">أحب كل شيء في Luna Glow! التصميمات أنيقة جداً والأسعار معقولة. خدمة العملاء ممتازة والفريق متعاون جداً.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>ليلى حسن</h4>
+                            <p class="review-date">منذ شهر</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">أفضل مكان لشراء المجوهرات! الجودة عالية جداً والتصاميم عصرية وأنيقة. سعيدة جداً بكل شيء.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>سارة خالد</h4>
+                            <p class="review-date">منذ شهر</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">تجربة تسوق رائعة من البداية للنهاية. المنتجات وصلت بحالة ممتازة والتغليف كان فاخر جداً. شكراً Luna Glow!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         INSTAGRAM GALLERY SECTION
+         ============================================ -->
+    <section id="gallery" class="instagram-gallery">
+        <div class="container">
+            <h2 class="section-title">متابعينا على Instagram</h2>
+            <p class="section-subtitle">@lunaglowijewelry</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/necklace-1.jpg" alt="صورة من Instagram">
+                    <div class="gallery-overlay">
+                        <a href="https://instagram.com/lunaglowijewelry" target="_blank" class="instagram-link">👁️ شاهدي المزيد</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/earrings.jpg" alt="صورة من Instagram">
+                    <div class="gallery-overlay">
+                        <a href="https://instagram.com/lunaglowijewelry" target="_blank" class="instagram-link">👁️ شاهدي المزيد</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rings-bracelets.jpg" alt="صورة من Instagram">
+                    <div class="gallery-overlay">
+                        <a href="https://instagram.com/lunaglowijewelry" target="_blank" class="instagram-link">👁️ شاهدي المزيد</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/necklace-2.jpg" alt="صورة من Instagram">
+                    <div class="gallery-overlay">
+                        <a href="https://instagram.com/lunaglowijewelry" target="_blank" class="instagram-link">👁️ شاهدي المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصلي معنا</h2>
+            <p class="section-subtitle">نحن هنا للإجابة على جميع أسئلتك</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <h4>واتس آب</h4>
+                        <p><a href="https://wa.me/966501234567" target="_blank">+966 50 123 4567</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <h4>البريد الإلكتروني</h4>
+                        <p><a href="mailto:info@lunaglow.com">info@lunaglow.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <h4>الموقع</h4>
+                        <p>الرياض، المملكة العربية السعودية</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <h4>ساعات العمل</h4>
+                        <p>من 10 صباحاً إلى 10 مساءً</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="رسالتك" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Luna Glow</h4>
+                    <p>مجوهرات فاخرة لكل امرأة تستحق أن تشع بجمال وأناقة</p>
+                </div>
+                <div class="footer-section">
+                    <h4>الروابط السريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#featured">المنتجات</a></li>
+                        <li><a href="#about">عن العلامة</a></li>
+                        <li><a href="#contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعينا</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/lunaglowijewelry" target="_blank" class="social-link">Instagram</a>
+                        <a href="https://facebook.com/lunaglowijewelry" target="_blank" class="social-link">Facebook</a>
+                        <a href="https://twitter.com/lunaglowijewelry" target="_blank" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luna Glow. جميع الحقوق محفوظة.</p>
+                <p>تم تطوير الموقع بعناية فائقة | <a href="#" class="footer-link">سياسة الخصوصية</a> | <a href="#" class="footer-link">شروط الاستخدام</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SHOPPING CART SIDEBAR
+         ============================================ -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>سلتك</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">السلة فارغة</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>الإجمالي:</span>
+                <span id="cartTotal">0 ريال</span>
+            </div>
+            <button class="checkout-btn" onclick="checkoutCart()">إتمام الطلب</button>
+        </div>
+    </div>
+
+    <!-- Cart Toggle Button -->
+    <button id="cartToggle" class="cart-toggle" onclick="toggleCart()">
+        <span class="cart-icon">🛍️</span>
+        <span id="cartCount" class="cart-count">0</span>
+    </button>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
